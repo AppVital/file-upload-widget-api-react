@@ -69,8 +69,8 @@ import { ApvFilePicker } from '@appvitalinc/file-upload-widget-api-react'
 
 const MyComponent = () => {
 
-  apikey = 'YOUR_API_KEY';
-  options =  {
+  const apikey = 'YOUR_API_KEY';
+  const options =  {
       multiple: false,
       outputfileoptions: {
         width: 500,
