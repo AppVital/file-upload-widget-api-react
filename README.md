@@ -33,11 +33,13 @@ npm install @appvitalinc/file-upload-widget-api-react
 ```javascript
 import { ApvFilePicker } from '@appvitalinc/file-upload-widget-api-react'
 
-const MyComponent = () => (
-  <ApvFilePicker
-    apikey={'apiKey'}
-  />
-)
+const MyComponent = () => {
+  return (
+    <ApvFilePicker
+      apikey={'apiKey'}
+    />
+  )
+}
 ```
 
 ### Available inputs
@@ -65,7 +67,7 @@ Below you can find some quick basic implementations.
 ```typescript
 import { ApvFilePicker } from '@appvitalinc/file-upload-widget-api-react'
 
-const MyComponent = () => (
+const MyComponent = () => {
 
   apikey = 'YOUR_API_KEY';
   options =  {
@@ -115,17 +117,19 @@ const MyComponent = () => (
     console.log('onUploadError', data);
   }
 
-  <ApvFilePicker
-    apiKey={apikey}
-    options={options}
-    onOpen={onOpen}
-    onClose={onClose}
-    onCancel)={onCancel}
-    onUploadDone={onUploadDone}
-    onUploadStarted={onUploadStart}
-    onUploadError={onUploadError} 
-    />
-)
+  return (
+    <ApvFilePicker
+      apiKey={apikey}
+      options={options}
+      onOpen={onOpen}
+      onClose={onClose}
+      onCancel)={onCancel}
+      onUploadDone={onUploadDone}
+      onUploadStarted={onUploadStart}
+      onUploadError={onUploadError} 
+      />
+    );
+}
 ```
 
 
