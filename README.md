@@ -20,7 +20,7 @@
 
 ## Demo/Examples
 
-See file upload widget in [action here](https://appvital.com/example/file-picker) with example configurations demonstrating various features.
+See file upload widget in [action here](https://appvital.com/example/cloud-file-uploader) with example configurations demonstrating various features.
 
 
 ## Quick Start
@@ -31,7 +31,7 @@ npm install @appvitalinc/file-upload-widget-api-react
 ```
 
 ```javascript
-import { ApvFilePicker } from '@appvitalinc/file-upload-widget-api-react'
+import { ApvFilePicker } from '@appvitalinc/file-upload-widget-api-react';
 
 const MyComponent = () => {
   return (
@@ -47,7 +47,7 @@ const MyComponent = () => {
 | Name    | Type                 | Required | Default | Description                                                         |
 | ------- | -------------------- | -------- | ------- | ------------------------------------------------------------------- |
 | apikey  | String               | True     |         | Filepicker api key                                                  |
-| options | ApvFilePickerOptions |          |         | Check [ApvFilePickerOptions](https://appvital.com/docs/file-picker) |
+| options | ApvFilePickerOptions |          |         | Check [ApvFilePickerOptions](https://appvital.com/docs/file-uploader) |
 
 ### Callbacks
 
@@ -64,8 +64,8 @@ Below you can find some quick basic implementations.
 
 #### Open picker - Single file upload
 
-```typescript
-import { ApvFilePicker } from '@appvitalinc/file-upload-widget-api-react'
+```javascript
+import { ApvFilePicker } from '@appvitalinc/file-upload-widget-api-react';
 
 const MyComponent = () => {
 
@@ -123,7 +123,7 @@ const MyComponent = () => {
       options={options}
       onOpen={onOpen}
       onClose={onClose}
-      onCancel)={onCancel}
+      onCancel={onCancel}
       onUploadDone={onUploadDone}
       onUploadStarted={onUploadStart}
       onUploadError={onUploadError} 
@@ -135,7 +135,7 @@ const MyComponent = () => {
 
 ## Documentation
 
-You can find further documentation about available filepicker options and configuration details here at https://appvital.com/docs/file-picker#Quickstart-React
+You can find further documentation about available filepicker options and configuration details here at https://appvital.com/docs/file-uploader#Quickstart-React
 
 ## Contributing
 
